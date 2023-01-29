@@ -1,6 +1,5 @@
 import Vue from 'vue'
-// import Vue from "./VueContext";
-
+// let { Vue } = window;
 Vue.config.productionTip = false
 
 import module from "@/tencent_module/index"

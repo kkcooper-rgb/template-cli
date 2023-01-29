@@ -1,0 +1,58 @@
+{
+  "name": "bdh-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "serve:pc": "node tencent_package_server.js cross-env VUE_APP_BUILD_TYPE=pc VUE_APP_BUILD_TARGET_TYPE=pc VUE_APP_BUILD_TARGET_FILE=root vue-cli-service serve",
+    "serve:h5": "node tencent_package_server.js cross-env VUE_APP_BUILD_TYPE=h5 VUE_APP_BUILD_TARGET_TYPE=h5 VUE_APP_BUILD_TARGET_FILE=root vue-cli-service serve",
+    "serve:custom": "node tencent_package_server.js cross-env VUE_APP_BUILD_TYPE=custom VUE_APP_BUILD_TARGET_TYPE=pc VUE_APP_BUILD_TARGET_FILE=root vue-cli-service serve",
+    "build:pc": "node tencent_package.js cross-env VUE_APP_BUILD_TYPE=pc VUE_APP_BUILD_TARGET_TYPE=pc VUE_APP_BUILD_TARGET_FILE=root vue-cli-service build",
+    "build:h5": "node tencent_package.js cross-env VUE_APP_BUILD_TYPE=h5 VUE_APP_BUILD_TARGET_TYPE=h5 VUE_APP_BUILD_TARGET_FILE=root vue-cli-service build",
+    "build:custom": "node tencent_package.js cross-env VUE_APP_BUILD_TYPE=custom VUE_APP_BUILD_TARGET_TYPE=pc VUE_APP_BUILD_TARGET_FILE=root vue-cli-service build"
+  },
+  "dependencies": {
+    "core-js": "^3.8.3",
+    "vue": "^2.6.14",
+    "vue-router": "^3.5.1",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-vuex": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "less": "^4.0.0",
+    "less-loader": "^8.0.0",
+    "vue-template-compiler": "^2.6.14"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "_id": "bdh-web@0.1.0",
+  "readme": "ERROR: No README data found!"
+}

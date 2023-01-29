@@ -11,6 +11,6 @@ module.exports = defineConfig({
   filenameHashing: false,
   publicPath: "./",
   outputDir: "dist",
-  productionSourceMap: true,
+  productionSourceMap: false,
   transpileDependencies: true
 })
